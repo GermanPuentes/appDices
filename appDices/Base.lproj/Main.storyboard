@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -16,21 +16,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="N2N-Ot-kQc">
-                                <rect key="frame" x="-3" y="-2" width="421" height="906"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="N2N-Ot-kQc">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="chip" translatesAutoresizingMaskIntoConstraints="NO" id="Br7-hF-Ugt">
-                                <rect key="frame" x="87" y="98" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" heightSizable="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chip" translatesAutoresizingMaskIntoConstraints="NO" id="Br7-hF-Ugt">
+                                <rect key="frame" x="145" y="63.999999999999993" width="124" height="124.33333333333331"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Br7-hF-Ugt" secondAttribute="height" multiplier="1:1" id="GUD-C0-rFw"/>
+                                </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dice3" translatesAutoresizingMaskIntoConstraints="NO" id="Wxb-5f-fhC">
-                                <rect key="frame" x="230" y="384" width="164" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EmP-B5-zPJ">
-                                <rect key="frame" x="117" y="697" width="186" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EmP-B5-zPJ">
+                                <rect key="frame" x="114.33333333333333" y="712" width="185.66666666666669" height="50"/>
                                 <color key="backgroundColor" red="0.0" green="0.19215686269999999" blue="0.3294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Lazar Dados">
@@ -41,13 +37,69 @@
                                     <action selector="btnLanzarDados:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UZe-8S-rCk"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dice1" translatesAutoresizingMaskIntoConstraints="NO" id="gWT-NQ-NSh">
-                                <rect key="frame" x="38" y="384" width="173" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="AT2-fD-Wib">
+                                <rect key="frame" x="15" y="359.66666666666669" width="384" height="177.00000000000006"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dice1" translatesAutoresizingMaskIntoConstraints="NO" id="gWT-NQ-NSh">
+                                        <rect key="frame" x="0.0" y="0.0" width="177" height="177"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="gWT-NQ-NSh" secondAttribute="height" multiplier="1:1" id="fsg-GX-pfl"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dice3" translatesAutoresizingMaskIntoConstraints="NO" id="Wxb-5f-fhC">
+                                        <rect key="frame" x="207" y="0.0" width="177" height="177"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Wxb-5f-fhC" secondAttribute="height" multiplier="1:1" id="U0p-Sq-lQB"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="N2N-Ot-kQc" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="44M-Fx-pGV"/>
+                            <constraint firstItem="AT2-fD-Wib" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="7TW-Fx-DE9"/>
+                            <constraint firstItem="AT2-fD-Wib" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8kv-1F-HAj"/>
+                            <constraint firstItem="Br7-hF-Ugt" firstAttribute="width" secondItem="N2N-Ot-kQc" secondAttribute="width" multiplier="0.3" id="INZ-ad-3D2"/>
+                            <constraint firstItem="Br7-hF-Ugt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="M0S-0l-GsW"/>
+                            <constraint firstItem="EmP-B5-zPJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="M1p-wQ-6sv"/>
+                            <constraint firstAttribute="bottom" secondItem="N2N-Ot-kQc" secondAttribute="bottom" id="Nb7-Nr-C1P"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="EmP-B5-zPJ" secondAttribute="bottom" constant="100" id="Pjz-88-xDb"/>
+                            <constraint firstAttribute="trailing" secondItem="N2N-Ot-kQc" secondAttribute="trailing" id="Vux-zO-5Ax"/>
+                            <constraint firstItem="AT2-fD-Wib" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="bRj-DN-gfB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="EmP-B5-zPJ" secondAttribute="bottom" constant="100" id="dGD-Mr-6ID"/>
+                            <constraint firstItem="Br7-hF-Ugt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kZh-fp-lRh"/>
+                            <constraint firstItem="N2N-Ot-kQc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ni6-4I-WD2"/>
+                            <constraint firstItem="AT2-fD-Wib" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="plu-MA-Yfi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AT2-fD-Wib" secondAttribute="trailing" constant="15" id="z98-Tq-2vL"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Pjz-88-xDb"/>
+                                <exclude reference="dGD-Mr-6ID"/>
+                                <exclude reference="z98-Tq-2vL"/>
+                                <exclude reference="bRj-DN-gfB"/>
+                                <exclude reference="plu-MA-Yfi"/>
+                                <exclude reference="kZh-fp-lRh"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="constraints">
+                                <exclude reference="dGD-Mr-6ID"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="Pjz-88-xDb"/>
+                                <exclude reference="dGD-Mr-6ID"/>
+                                <include reference="z98-Tq-2vL"/>
+                                <include reference="bRj-DN-gfB"/>
+                                <include reference="plu-MA-Yfi"/>
+                                <include reference="INZ-ad-3D2"/>
+                                <include reference="kZh-fp-lRh"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="imgDadoDos" destination="Wxb-5f-fhC" id="gN8-fR-xoQ"/>
@@ -56,14 +108,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-404" y="138"/>
+            <point key="canvasLocation" x="-404.34782608695656" y="137.94642857142856"/>
         </scene>
     </scenes>
     <resources>
         <image name="background" width="360" height="640"/>
-        <image name="chip" width="170.5" height="170.5"/>
-        <image name="dice1" width="170.5" height="170.5"/>
-        <image name="dice3" width="170.5" height="170.5"/>
+        <image name="chip" width="170.66667175292969" height="170.66667175292969"/>
+        <image name="dice1" width="170.66667175292969" height="170.66667175292969"/>
+        <image name="dice3" width="170.66667175292969" height="170.66667175292969"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
